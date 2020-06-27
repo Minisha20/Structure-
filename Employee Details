@@ -1,0 +1,27 @@
+
+#include<stdio.h>
+ struct employee{
+  int id,salary;
+  char name[20];
+ }e[3];
+main()
+{
+int i,max=3;
+  for(i=0;i<max;i++)
+  {
+    printf("Enter employee %d id\n",i+1);
+    scanf("%d",&e[i].id);
+    printf("Enter employee %d name\n",i+1);
+    scanf("%s",&e[i].name);
+    printf("Enter employee %d salary\n",i+1);
+    scanf("%d",&e[i].salary);
+  }
+
+   for(i=0;i<max;i++)
+   {
+     printf("employee %d id=%d\n",i+1,e[i].id);
+     printf("employee %d Name=%s\n",i+1,e[i].name);
+     printf("employee %d Salary=%d\n",i+1,e[i].salary);
+    }
+}
+
